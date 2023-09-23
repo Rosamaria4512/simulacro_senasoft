@@ -1,5 +1,6 @@
 package com.co.andrescepeda.stepsdefinitions;
 
+import conm.co.andrescepeda.tasks.EventsTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -32,6 +33,7 @@ public class UpcomingEventsStepDefinition {
 
     @When("^he enters the events module$")
     public void heEntersTheEventsModule() {
+        OnStage.theActorInTheSpotlight().attemptsTo(EventsTask.events());
 
     }
 
