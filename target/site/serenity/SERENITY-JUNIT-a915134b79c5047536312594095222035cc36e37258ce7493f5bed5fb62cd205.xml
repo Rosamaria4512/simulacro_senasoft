@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="releases" skipped="0" tests="1" time="15.38" timestamp="2023-09-23 11:39:15"><testcase name="view latest releases"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+conm.co.andrescepeda.tasks.ReleasesTask.performAs(ReleasesTask.java:13)&#13;
+com.co.andrescepeda.stepsdefinitions.ReleasesStepDefiniton.heEntersTheLaunchModule(ReleasesStepDefiniton.java:12)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

@@ -108,9 +108,9 @@
             <span class="breadcrumbs">
                 <a href="index.html">Home</a>
                 > <span class="truncate-40"><a
-                    href="a55f0cce8cac48624c1c18372e4049d4dfe6d558a2c006ee5e1ad29ba215c25d.html">Upcoming Events</a></span>
+                    href="1ea0584da32e726da31e18047595a68c2c3ee344ba3a087ac207886f8224a3da.html">Releases</a></span>
                 > <span class="truncate-60"><a
-                    href="fdc26f63d50dfbcef539bc3ad88a0f3adfdda9c4525ccc669ebf0c00b026fd29.html">upcoming events </a></span>
+                    href="a915134b79c5047536312594095222035cc36e37258ce7493f5bed5fb62cd205.html">view latest releases </a></span>
                 > Screenshots
             </span>
         </div>
@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-09-2023 10:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-09-2023 11:39</span>
     <br style="clear:left"/>
 </div>
 
@@ -148,23 +148,17 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Upcoming Events </span>
+                                    <span class="story-header-title">Releases </span>
                                     <span class="badge tag-badge" style="">Feature</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                information about upcoming events
+                                
                                 </div>
                             </div>
 
                         </td>
                         <td valign="top" align="right">
-                            <p class="tag">
-                                <span class="badge tag-badge" style="background:default;"
-                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="2449a1630748952e035af40d8c2aad46fb1b7a564c08ddbb8c1a01b938ba6516.html">Upcomingevents
-                                    (tag)</a>
-                                </span>
-                            </p>
                         </td>
                     </tr>
                 </table>
@@ -173,9 +167,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">upcoming events
+                                <span class="failing-color">view latest releases
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -198,7 +192,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -214,13 +208,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>conm.co.andrescepeda.tasks.EventsTask.performAs(EventsTask.java:13)<br />com.co.andrescepeda.stepsdefinitions.UpcomingEventsStepDefinition.heEntersTheEventsModule(UpcomingEventsStepDefinition.java:36)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>conm.co.andrescepeda.tasks.ReleasesTask.performAs(ReleasesTask.java:13)<br />com.co.andrescepeda.stepsdefinitions.ReleasesStepDefiniton.heEntersTheLaunchModule(ReleasesStepDefiniton.java:12)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.cssSelector: (//*[@id='mainNavigation']/div[5]/a to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>conm.co.andrescepeda.tasks.ReleasesTask.performAs(ReleasesTask.java :13)<br />com.co.andrescepeda.stepsdefinitions.ReleasesStepDefiniton.heEntersTheLaunchModule(ReleasesStepDefiniton.java :12)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,18 +229,18 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource1886488093495377783.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource2152948377767222464.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="6479c20b3f2fdf06efda72aac8538eb01b839a2fee5159bd120b08faa037c529.png" title=" Given he enters the website" width="1920"/>
-                <img src="6479c20b3f2fdf06efda72aac8538eb01b839a2fee5159bd120b08faa037c529.png" title=" User opens the https://andrescepeda.com.co/" width="1920"/>
-                <img src="6479c20b3f2fdf06efda72aac8538eb01b839a2fee5159bd120b08faa037c529.png" title=" Given he enters the website (completed)" width="1920"/>
-                <img src="6479c20b3f2fdf06efda72aac8538eb01b839a2fee5159bd120b08faa037c529.png" title=" When he enters the events module" width="1920"/>
-                <img src="cad24baabdfebad9a6513e1a789224d0836416c2aec3ab2dfcb2d88435aa8c9a.png" title=" User events task" width="1920"/>
-                <img src="cad24baabdfebad9a6513e1a789224d0836416c2aec3ab2dfcb2d88435aa8c9a.png" title=" User clicks on Aceder al modulo de Eventos" width="1920"/>
-                <img src="748a90edd2d769d3589d36b137a456b54ca31351e914fa06c868241e0e5c82aa.png" title=" User clicks on Aceder al modulo de Eventos (completed): <span class='error-color'>ERROR</span>" width="1920"/>
+                <img src="d34dc1b217460a376d1357c200bd007b00cfec95298422224faa0ce78e6ece9b.png" title=" Given he enters the website" width="1920"/>
+                <img src="d34dc1b217460a376d1357c200bd007b00cfec95298422224faa0ce78e6ece9b.png" title=" User opens the https://andrescepeda.com.co/" width="1920"/>
+                <img src="d34dc1b217460a376d1357c200bd007b00cfec95298422224faa0ce78e6ece9b.png" title=" Given he enters the website (completed)" width="1920"/>
+                <img src="d34dc1b217460a376d1357c200bd007b00cfec95298422224faa0ce78e6ece9b.png" title=" When he enters the launch module" width="1920"/>
+                <img src="744515727a45b58241e0c3ff8e29181f7a5c4e9cd4ba816caefb7605bfce09d2.png" title=" User releases task" width="1920"/>
+                <img src="744515727a45b58241e0c3ff8e29181f7a5c4e9cd4ba816caefb7605bfce09d2.png" title=" User clicks on Aceder al modulo LANZAMIENTOS" width="1920"/>
+                <img src="6563e6fd7689cda9df97111acdb65dc182c077e4d4aea60da922c970c6eed2b9.png" title=" User clicks on Aceder al modulo LANZAMIENTOS (completed): <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 
